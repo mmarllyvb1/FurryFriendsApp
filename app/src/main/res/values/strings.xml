@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FurryFriendsApp</string>
+
+    <string-array name="tipoDocumento">
+        <item>Documento</item>
+        <item>Cédula de ciudadanía</item>
+        <item>Precédula</item>
+        <item>Tarjeta de Identidad</item>
+        <item>Pasaporte</item>
+    </string-array>
+
+</resources>
