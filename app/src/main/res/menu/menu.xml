@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/iconhome"
+        android:icon="@drawable/ic_home"
+        android:title="home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/iconadd"
+        android:icon="@drawable/ic_add"
+        android:title="añadir"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/iconperfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="perfil"
+        app:showAsAction="always" />
+
+
+</menu>

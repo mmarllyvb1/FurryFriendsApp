@@ -13,7 +13,21 @@
         android:theme="@style/Theme.FurryFriendsApp"
         tools:targetApi="31">
         <activity
-            android:name=".RegisterActivity"
+            android:name=".EditMascotaActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddMascotaActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -21,6 +35,13 @@
         </activity>
         <activity
             android:name=".IndexActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

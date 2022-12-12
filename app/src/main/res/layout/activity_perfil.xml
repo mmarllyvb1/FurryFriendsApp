@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:text="Mi Perfil"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/txtNombres"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nombre"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/txtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Apellidos"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtCelular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Celular"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/txtDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Email"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnAddMascota"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:onClick="agregar"
+            android:text="Añadir Mascota"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:text="Mis Mascotas"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteY="156dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvMisMascotas"
+                android:layout_width="match_parent"
+                android:layout_height="343dp" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/menu"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
